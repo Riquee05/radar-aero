@@ -51,3 +51,11 @@ Mapa, Tráfego e Widget permanecem acessíveis na barra fixa em celular e PC. Vo
 Nova identidade em verde radar e ciano, mapa em tons verdes, ícone vetorial próprio e ícones PNG atualizados. O APK 0.2.0 inclui o botão Adicionar widget à tela inicial, quando suportado pelo launcher Android, e acesso direto ao mapa. Atualize o APK anterior para obter esses controles. A assinatura de atualização foi preservada.
 
 Validação: navegação em PC e viewport 390 × 844, retorno pelo histórico do navegador, painel de instalação, testes de cache e instalação, compilação e lint Android sem erros. A inclusão do widget ainda requer conferência em aparelho Android real.
+
+
+### Acesso direto
+
+- [Abrir o Radar Aero](https://riquee05.github.io/radar-aero/)
+- [Atualizar o widget Android 0.2.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget.apk?v=20261102-2)
+
+No app já instalado, use Widget na barra inferior. No Android, instale o APK atualizado para obter o botão Adicionar widget à tela inicial.
