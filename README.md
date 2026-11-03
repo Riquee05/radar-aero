@@ -43,3 +43,11 @@ Repositório: https://github.com/Riquee05/radar-aero
 Site: https://riquee05.github.io/radar-aero/
 
 Gere a versão estática com node scripts/build-pages.mjs. Publique a branch main, pasta /docs nas configurações Pages. O navegador consulta a API pública do Radar Aero em https://radar-aero.e8zxc1.chatgpt.site/api/aircraft; GitHub Pages não executa o servidor. A API aceita leitura pelo navegador apenas da origem https://riquee05.github.io, sem cookies ou chave no código. As consultas continuam limitadas às regiões e raios permitidos. Não use proxies abertos. Ícones, manifesto e cache offline usam caminhos relativos ao projeto /radar-aero/.
+
+## Atualização 0.2.0 — navegação e identidade visual
+
+Mapa, Tráfego e Widget permanecem acessíveis na barra fixa em celular e PC. Voltar ao mapa fecha os detalhes e restaura o enquadramento anterior; o botão Voltar do navegador também retorna dos detalhes ao mapa. O painel App & Widget permanece disponível depois de instalar a PWA.
+
+Nova identidade em verde radar e ciano, mapa em tons verdes, ícone vetorial próprio e ícones PNG atualizados. O APK 0.2.0 inclui o botão Adicionar widget à tela inicial, quando suportado pelo launcher Android, e acesso direto ao mapa. Atualize o APK anterior para obter esses controles. A assinatura de atualização foi preservada.
+
+Validação: navegação em PC e viewport 390 × 844, retorno pelo histórico do navegador, painel de instalação, testes de cache e instalação, compilação e lint Android sem erros. A inclusão do widget ainda requer conferência em aparelho Android real.
