@@ -137,3 +137,11 @@ Validação: regressões de retorno de aeroporto entre regiões, restauração d
 ### Voltar aos aviões
 
 [Abrir versão corrigida 0.6.1](https://riquee05.github.io/radar-aero/?release=0.6.1). Use Aviões na barra inferior ou Mapa de aviões no cartão do aeroporto. Ao abrir um aeroporto de outra região, o retorno restaura a consulta e a câmera anteriores. Se o mapa estiver vazio, use a ação de recuperação exibida no centro.
+
+## Aeroportos na barra principal — web 0.6.2
+
+Adicionado Aeroportos entre Tráfego e Widget na navegação principal. O botão abre diretamente a lista dos seis aeroportos, com busca e acesso a voos/clima, sem exibir os controles de ponto salvo. O estado ativo distingue aeroportos de tráfego, inclusive ao abrir o cartão de um aeroporto pelo mapa. No celular, ícones e textos em duas linhas mantêm os quatro botões dentro da tela sem abrir o teclado automaticamente.
+
+Os marcadores de aeroportos usam ícone de terminal, código em destaque, contraste e prioridade sobre os ícones de aeronaves. O mapa possui contexto de empilhamento próprio: aviões e logos não podem cobrir título, controles ou legenda. O retorno ao mapa de aviões da versão 0.6.1 foi preservado.
+
+Validação: lista direta, estado ativo, abertura de GRU e retorno aos aviões em viewport 390 × 844; quatro botões sem transbordamento; terminais GRU/CGH/VCP visíveis e título da região desobstruído. Testes existentes de navegação, clima, instalação e cache passaram. APK permanece 0.4.0.
