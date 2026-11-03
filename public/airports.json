@@ -1,0 +1,50 @@
+[
+  {
+    "ident": "SBBR",
+    "iata_code": "BSB",
+    "name": "Presidente Juscelino Kubitschek International Airport",
+    "latitude_deg": "-15.869167",
+    "longitude_deg": "-47.920834",
+    "municipality": "Brasília"
+  },
+  {
+    "ident": "SBGL",
+    "iata_code": "GIG",
+    "name": "Rio de Janeiro Galeão – Tom Jobim International Airport",
+    "latitude_deg": "-22.809999",
+    "longitude_deg": "-43.250557",
+    "municipality": "Rio De Janeiro"
+  },
+  {
+    "ident": "SBGR",
+    "iata_code": "GRU",
+    "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+    "latitude_deg": "-23.431274",
+    "longitude_deg": "-46.469954",
+    "municipality": "São Paulo"
+  },
+  {
+    "ident": "SBKP",
+    "iata_code": "VCP",
+    "name": "Viracopos International Airport",
+    "latitude_deg": "-23.007404",
+    "longitude_deg": "-47.134502",
+    "municipality": "Campinas"
+  },
+  {
+    "ident": "SBSP",
+    "iata_code": "CGH",
+    "name": "Congonhas–Deputado Freitas Nobre Airport",
+    "latitude_deg": "-23.627657",
+    "longitude_deg": "-46.654601",
+    "municipality": "São Paulo"
+  },
+  {
+    "ident": "SBSV",
+    "iata_code": "SSA",
+    "name": "Deputado Luiz Eduardo Magalhães International Airport",
+    "latitude_deg": "-12.908611",
+    "longitude_deg": "-38.322498",
+    "municipality": "Salvador"
+  }
+]
