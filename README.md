@@ -65,3 +65,8 @@ No app já instalado, use Widget na barra inferior. No Android, instale o APK at
 Removida a exigência de salvar um ponto antes de solicitar a adição à tela inicial. O botão Adicionar widget aparece antes do formulário. Configuração inicial opcional no Android 12 ou superior; a configuração acionada pelo launcher também permite adicionar agora e configurar depois. A confirmação de adição usa callback do sistema, sem tratar a solicitação aceita como widget já instalado.
 
 Feedback visível e caminho manual para o Galaxy: tela inicial → manter um espaço vazio pressionado → Widgets → Radar Aero Widget → Adicionar. O ponto é configurado depois em Ajustes. Compilação, lint, assinatura de atualização e flags do APK conferidos; ainda é necessário validar a adição no Galaxy A55 do usuário.
+
+
+### Adicionar no Galaxy A55
+
+Instale a atualização 0.2.1 e abra Radar Aero Widget. Toque em Adicionar widget à tela inicial; as coordenadas podem ser configuradas depois. Se a confirmação não aparecer, mantenha pressionado um espaço vazio da tela inicial → Widgets → Radar Aero Widget → Adicionar.
