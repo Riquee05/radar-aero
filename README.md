@@ -145,3 +145,7 @@ Adicionado Aeroportos entre Tráfego e Widget na navegação principal. O botão
 Os marcadores de aeroportos usam ícone de terminal, código em destaque, contraste e prioridade sobre os ícones de aeronaves. O mapa possui contexto de empilhamento próprio: aviões e logos não podem cobrir título, controles ou legenda. O retorno ao mapa de aviões da versão 0.6.1 foi preservado.
 
 Validação: lista direta, estado ativo, abertura de GRU e retorno aos aviões em viewport 390 × 844; quatro botões sem transbordamento; terminais GRU/CGH/VCP visíveis e título da região desobstruído. Testes existentes de navegação, clima, instalação e cache passaram. APK permanece 0.4.0.
+
+### Acesso direto aos aeroportos
+
+[Abrir versão 0.6.2](https://riquee05.github.io/radar-aero/?release=0.6.2). Use Aeroportos na barra inferior para abrir a lista, escolha o aeroporto e consulte Voos ou Clima. Use Aviões para retornar ao mapa de aeronaves.
