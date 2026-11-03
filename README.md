@@ -149,3 +149,11 @@ Validação: lista direta, estado ativo, abertura de GRU e retorno aos aviões e
 ### Acesso direto aos aeroportos
 
 [Abrir versão 0.6.2](https://riquee05.github.io/radar-aero/?release=0.6.2). Use Aeroportos na barra inferior para abrir a lista, escolha o aeroporto e consulte Voos ou Clima. Use Aviões para retornar ao mapa de aeronaves.
+
+## Voos clicáveis e quantidade no widget — Android 0.5.0 / web 0.7.0
+
+Cada linha do widget abre o mapa com o identificador hexadecimal da aeronave, o ponto salvo e o raio. O site seleciona automaticamente apenas a aeronave correspondente com posição recente da consulta. Se ela não estiver disponível, mostra um aviso dispensável, sem selecionar outro voo e sem inventar posições. A seleção é consumida uma vez para não reabrir os detalhes a cada atualização.
+
+Em Ajustes, escolha 1 avião (o mais próximo) ou até 3 e toque em Aplicar quantidade de aviões. Essa escolha é salva separadamente do ponto, vale para todos os widgets e não exige coordenadas nem nova consulta. Para três linhas, aumente a altura do widget: a exibição continua respeitando o espaço disponível. O fluxo de adição já validado no Galaxy A55 foi preservado. Snapshots de versões antigas sem identificador abrem o mapa; Atualizar passa a receber os identificadores.
+
+Validação: testes de seleção por link (identificador válido/inválido, aeronave ausente/antiga e seleção única), regressões de navegação, acompanhamento, instalação e cache; compilação assembleDebug e lintDebug Android sem erros; versão 0.5.0 e assinatura de atualização preservada. Link com ponto/raio abriu a aeronave real PS-LPD no navegador em viewport 390 × 844; aviso de aeronave ausente também conferido. Não há aparelho Android conectado; é necessário conferir os toques e a quantidade no Galaxy A55 após instalar a atualização.

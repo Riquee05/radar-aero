@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {WidgetFlightRequest} from '../public/widget-flight.js';
+test('opens only the matching fresh aircraft once',()=>{const now=1000000,p=new WidgetFlightRequest(new URLSearchParams('aircraft=ABC123'));const a={id:'abc123',positionAt:now};assert.equal(p.resolve([{id:'def456',positionAt:now},a],now).aircraft,a);assert.equal(p.resolve([a],now).status,'idle');});
+test('invalid IDs do not initiate a selection',()=>{for(const id of ['', '../x','<script>','1234567'])assert.equal(new WidgetFlightRequest(new URLSearchParams({aircraft:id})).resolve([],1000000).status,'idle');});
+test('a missing or old aircraft is never replaced by a different flight',()=>{for(const aircraft of [[],[{id:'abc123',positionAt:1}],[{id:'def456',positionAt:1000000}]]){const p=new WidgetFlightRequest(new URLSearchParams('aircraft=abc123'));assert.equal(p.resolve(aircraft,1000000).status,'missing');}});
