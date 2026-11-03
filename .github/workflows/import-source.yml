@@ -1,0 +1,21 @@
+name: Importar projeto Radar Aero
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Importar arquivos e remover importador temporário
+        run: |
+          test -f radar-aero-source.tar.gz
+          tar -xzf radar-aero-source.tar.gz
+          rm radar-aero-source.tar.gz
+          rm .github/workflows/import-source.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Importar projeto completo Radar Aero e remover importador temporário"
+          git push origin HEAD:main
