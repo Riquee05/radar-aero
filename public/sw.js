@@ -1,4 +1,4 @@
-const BASE=new URL(self.registration.scope),PREFIX='radar-aero-'+BASE.pathname+'-shell-',CACHE=PREFIX+'v7';
+const BASE=new URL(self.registration.scope),PREFIX='radar-aero-'+BASE.pathname+'-shell-',CACHE=PREFIX+'v8';
 const SHELL=['radar.html','radar.css','radar.js','airlines.js','flight-routes.js','follow.js','spotter.js','airport-info.js','proximity.js','runtime-config.js','pwa.js','manifest.webmanifest','icons/app-icon-192.png','icons/app-icon-512.png','icons/radar-mark.svg','airports.json','map-style.json','vendor/maplibre-gl.js','vendor/maplibre-gl.css','airlines/latam.svg','airlines/azul.svg','airlines/gol.svg'].map(p=>new URL(p,BASE).href);
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

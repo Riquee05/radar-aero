@@ -125,3 +125,11 @@ Validação: testes de clima, cache/atualização, restrição de aeroportos e f
 ### Consultar aeroporto
 
 [Abrir versão web 0.6.0](https://riquee05.github.io/radar-aero/?release=0.6.0). Toque no ícone de um aeroporto no mapa, ou use Aeroportos → Ver voos e clima. No cartão, Voos abre a seção com o painel oficial externo; Clima mostra a estimativa meteorológica. O botão Voltar ao mapa permanece disponível.
+
+## Retorno ao mapa de aviões — web 0.6.1
+
+Corrigido o desencontro entre câmera e consulta após abrir um aeroporto de outra região. Ao voltar de um aeroporto, o app restaura a região/ponto e o enquadramento anteriores, retoma a aba Tráfego, limpa os filtros transitórios e consulta novamente se necessário. Favoritos e filtros salvos são preservados. O botão Tráfego agora abre a lista de aeronaves mesmo que a aba anterior fosse Aeroportos.
+
+Os controles passam a dizer Aviões e Mapa de aviões. Um mapa vazio informa se a causa é filtro, câmera fora da área das aeronaves, ausência de posições recentes ou falha da consulta, oferecendo uma ação de recuperação. Nenhuma posição é inventada quando há lacunas de cobertura.
+
+Validação: regressões de retorno de aeroporto entre regiões, restauração da consulta e câmera e atualização de dados antigos; testes existentes de aeroportos, Spotter, acompanhamento, instalação e cache. Teste real São Paulo → Salvador → mapa original com 53 aeronaves, busca sem resultados e recuperação, em PC e viewport móvel 390 × 844.
