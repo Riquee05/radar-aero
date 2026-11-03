@@ -66,7 +66,16 @@ Removida a exigência de salvar um ponto antes de solicitar a adição à tela i
 
 Feedback visível e caminho manual para o Galaxy: tela inicial → manter um espaço vazio pressionado → Widgets → Radar Aero Widget → Adicionar. O ponto é configurado depois em Ajustes. Compilação, lint, assinatura de atualização e flags do APK conferidos; ainda é necessário validar a adição no Galaxy A55 do usuário.
 
-
 ### Adicionar no Galaxy A55
 
 Instale a atualização 0.2.1 e abra Radar Aero Widget. Toque em Adicionar widget à tela inicial; as coordenadas podem ser configuradas depois. Se a confirmação não aparecer, mantenha pressionado um espaço vazio da tela inicial → Widgets → Radar Aero Widget → Adicionar.
+
+## Rotas e detalhes compactos — widget 0.3.0
+
+Ao selecionar um avião, os detalhes aparecem em um cartão inferior compacto no celular, com o avião enquadrado no mapa acima. No PC, o cartão flutua à direita. Voltar ao mapa fecha os detalhes.
+
+Origem e destino são consultados sob demanda por indicativo na API pública [adsbdb](https://www.adsbdb.com), com cache temporário em memória e atribuição visível. As rotas cadastradas podem variar e não confirmam a operação do dia. Não há banco de rotas empacotado ou exportável. Créditos e condições da fonte: [adsbdb](https://github.com/mrjackwills/adsbdb).
+
+O widget 0.3.0 consulta os aeroportos dos até três aviões mais próximos. O tamanho do widget determina quantas aeronaves aparecem. Falhas na consulta de rotas não removem as posições recebidas. O usuário confirmou a adição do widget anterior no Galaxy A55; esta atualização requer conferência no aparelho.
+
+Validação: testes de rotas, cache e instalação web; compilação e lint Android; assinatura de atualização preservada; mapa e cartão conferidos em viewport 390 × 844.
