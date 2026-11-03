@@ -55,7 +55,7 @@ Validação: navegação em PC e viewport 390 × 844, retorno pelo histórico do
 ### Acesso direto
 
 - [Abrir o Radar Aero](https://riquee05.github.io/radar-aero/)
-- [Atualizar o widget Android 0.4.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.4.0.apk)
+- [Atualizar o widget Android 0.5.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.5.0.apk)
 
 No app já instalado, use Widget na barra inferior. No Android, instale o APK atualizado para obter o botão Adicionar widget à tela inicial.
 
@@ -157,3 +157,7 @@ Cada linha do widget abre o mapa com o identificador hexadecimal da aeronave, o 
 Em Ajustes, escolha 1 avião (o mais próximo) ou até 3 e toque em Aplicar quantidade de aviões. Essa escolha é salva separadamente do ponto, vale para todos os widgets e não exige coordenadas nem nova consulta. Para três linhas, aumente a altura do widget: a exibição continua respeitando o espaço disponível. O fluxo de adição já validado no Galaxy A55 foi preservado. Snapshots de versões antigas sem identificador abrem o mapa; Atualizar passa a receber os identificadores.
 
 Validação: testes de seleção por link (identificador válido/inválido, aeronave ausente/antiga e seleção única), regressões de navegação, acompanhamento, instalação e cache; compilação assembleDebug e lintDebug Android sem erros; versão 0.5.0 e assinatura de atualização preservada. Link com ponto/raio abriu a aeronave real PS-LPD no navegador em viewport 390 × 844; aviso de aeronave ausente também conferido. Não há aparelho Android conectado; é necessário conferir os toques e a quantidade no Galaxy A55 após instalar a atualização.
+
+### Atualizar e escolher a quantidade
+
+[Baixar widget 0.5.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.5.0.apk). Instale por cima, sem desinstalar. Em Ajustes, escolha 1 ou até 3 aviões e toque em Aplicar quantidade de aviões. Amplie o widget verticalmente para ver os três. Toque em Atualizar para renovar os dados; depois toque em uma linha para abrir o voo no mapa. Site atualizado: https://riquee05.github.io/radar-aero/?release=0.7.0
