@@ -79,3 +79,7 @@ Origem e destino são consultados sob demanda por indicativo na API pública [ad
 O widget 0.3.0 consulta os aeroportos dos até três aviões mais próximos. O tamanho do widget determina quantas aeronaves aparecem. Falhas na consulta de rotas não removem as posições recebidas. O usuário confirmou a adição do widget anterior no Galaxy A55; esta atualização requer conferência no aparelho.
 
 Validação: testes de rotas, cache e instalação web; compilação e lint Android; assinatura de atualização preservada; mapa e cartão conferidos em viewport 390 × 844.
+
+### Atualizar o widget com aeroportos
+
+[Baixar widget Android 0.3.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.3.0.apk). Instale por cima da versão anterior, sem desinstalar. No widget, toque em Atualizar para consultar saída e destino quando houver rota cadastrada.
