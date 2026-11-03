@@ -109,3 +109,15 @@ Validação: testes de filtros, normalização das combinações, estimativa e l
 ### Abrir o Modo Spotter
 
 [Acessar versão web 0.5.0](https://riquee05.github.io/radar-aero/?release=0.5.0). Toque em Spotter no mapa para combinar e salvar filtros. Selecione um avião e abra Gráficos da sessão para acompanhar altitude e velocidade recebidas. Não é necessário atualizar o APK 0.4.0 nesta etapa.
+
+## Aeroportos, painéis oficiais e clima — web 0.6.0
+
+Clicar em um aeroporto no mapa ou em Ver voos e clima na lista abre um cartão compacto. Os botões Voos e Clima no topo levam às respectivas seções. O cartão identifica aeroporto/cidade/códigos e permite favoritar, abrir o painel oficial em outra aba e voltar ao mapa. Trocar o aeroporto não permite que uma resposta meteorológica atrasada substitua o cartão atual.
+
+Por escolha do usuário, chegadas, partidas, horários e status são consultados nos canais oficiais externos, sem importar tabelas, inferir horários ou exigir API paga: GRU Airport, RIOgaleão, Viracopos, Aena/Congonhas e Salvador Bahia Airport. Brasília abre o site oficial bsb.aero com orientação para escolher Voos; a leitura automatizada desse site recebeu HTTP 403, por isso não foi inventado um endereço de painel interno.
+
+Clima direto no cartão via Open-Meteo: temperatura, vento, direção, umidade e precipitação do intervalo atual, com horário de referência em America/Sao_Paulo, atribuição e licença CC BY 4.0. São estimativas meteorológicas da região do aeroporto, não METAR nem observações da estação aeroportuária. Consultas limitadas aos seis aeroportos cadastrados, com cache em memória de 10 minutos, deduplicação e atualização manual. Falhas são explicitadas e valores ausentes não viram zero.
+
+Fontes: https://open-meteo.com/en/docs ; https://www.gru.com.br/pt/passageiro/voos ; https://www.riogaleao.com/passageiros/voos/painel-de-voos/ ; https://www.viracopos.com/pt_br/passageiro/painel-de-voos.htm ; https://www.aenabrasil.com.br/pt/aeroportos/aeroporto-de-congonhas/informacoes-de-voos.html ; https://www.salvador-airport.com.br/index.php/pt-br/partidas-e-chegadas ; https://www.bsb.aero/
+
+Validação: testes de clima, cache/atualização, restrição de aeroportos e falhas; regressões de Spotter, acompanhamento, instalação e cache offline. Consulta real com CORS permitida; cartões de GRU e SSA, mudança de região, retorno ao mapa e atalhos Voos/Clima conferidos em viewport 390 × 844. O APK continua na versão 0.4.0.
