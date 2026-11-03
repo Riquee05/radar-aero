@@ -133,3 +133,7 @@ Corrigido o desencontro entre câmera e consulta após abrir um aeroporto de out
 Os controles passam a dizer Aviões e Mapa de aviões. Um mapa vazio informa se a causa é filtro, câmera fora da área das aeronaves, ausência de posições recentes ou falha da consulta, oferecendo uma ação de recuperação. Nenhuma posição é inventada quando há lacunas de cobertura.
 
 Validação: regressões de retorno de aeroporto entre regiões, restauração da consulta e câmera e atualização de dados antigos; testes existentes de aeroportos, Spotter, acompanhamento, instalação e cache. Teste real São Paulo → Salvador → mapa original com 53 aeronaves, busca sem resultados e recuperação, em PC e viewport móvel 390 × 844.
+
+### Voltar aos aviões
+
+[Abrir versão corrigida 0.6.1](https://riquee05.github.io/radar-aero/?release=0.6.1). Use Aviões na barra inferior ou Mapa de aviões no cartão do aeroporto. Ao abrir um aeroporto de outra região, o retorno restaura a consulta e a câmera anteriores. Se o mapa estiver vazio, use a ação de recuperação exibida no centro.
