@@ -83,3 +83,11 @@ Validação: testes de rotas, cache e instalação web; compilação e lint Andr
 ### Atualizar o widget com aeroportos
 
 [Baixar widget Android 0.3.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.3.0.apk). Instale por cima da versão anterior, sem desinstalar. No widget, toque em Atualizar para consultar saída e destino quando houver rota cadastrada.
+
+## Seguir avião e leitura do widget — 0.4.0
+
+O botão Seguir avião acompanha somente novas posições recebidas. Arrastar o mapa, escolher outra aeronave, voltar ao mapa ou trocar a região encerra o acompanhamento. Se a posição exceder 60 segundos, a aeronave sair da consulta ou a fonte falhar, o acompanhamento para sem extrapolar a trajetória.
+
+O widget separa identificação em destaque, rota e distância/modelo/altitude. Um contador mostra o tempo decorrido desde a consulta, inclusive entre atualizações; dados antigos recebem aviso ao redesenhar. Os botões permanecem fora da área reservada às aeronaves. As informações descrevem a última consulta, não rastreamento contínuo no widget.
+
+Validação: testes de acompanhamento (posição nova, antiga, ausente, inválida e falha da fonte); navegação e acompanhamento em viewport 390 × 844, incluindo parada ao arrastar; compilação e lint Android. A aparência nativa precisa ser conferida no Galaxy A55, pois não há aparelho conectado neste PC.
