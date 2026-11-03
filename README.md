@@ -105,3 +105,7 @@ A indicação de subida/descida é uma estimativa entre duas altitudes barométr
 A trajetória usa verde abaixo de 10 mil pés, ciano entre 10 e 25 mil, violeta a partir de 25 mil e cinza quando a altitude não está disponível. Nos detalhes, Gráficos da sessão mostra altitude e velocidade ao longo do tempo: até 120 amostras por aeronave; lacunas acima de 60 segundos e valores ausentes interrompem as linhas. Sem dados simulados ou histórico anterior à sessão. Ao recarregar ou mudar a região, as amostras são descartadas.
 
 Validação: testes de filtros, normalização das combinações, estimativa e lacunas de trajetória/gráficos; testes de acompanhamento, instalação e cache. Interface conferida em celular 390 × 844 com posições reais, aplicação do filtro LATAM, salvamento/recarregamento/exclusão e gráficos com amostras recebidas. APK permanece 0.4.0, pois esta etapa atualiza apenas o site/PWA.
+
+### Abrir o Modo Spotter
+
+[Acessar versão web 0.5.0](https://riquee05.github.io/radar-aero/?release=0.5.0). Toque em Spotter no mapa para combinar e salvar filtros. Selecione um avião e abra Gráficos da sessão para acompanhar altitude e velocidade recebidas. Não é necessário atualizar o APK 0.4.0 nesta etapa.
