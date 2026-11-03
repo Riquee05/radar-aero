@@ -11,3 +11,6 @@ Instale o APK de desenvolvimento no Android, abra Radar Aero Widget e informe la
 Atualização manual e solicitação automática a cada 30 minutos, sujeita a bateria, conexão e regras do Android. Cada resultado mostra horário da consulta; não representa acompanhamento contínuo. Posições com mais de 120 segundos são ignoradas no momento da consulta. Sem recepção não significa céu vazio. Altitudes são barométricas; distâncias horizontais.
 
 O widget consulta diretamente a API pública adsb.lol por HTTPS, evitando depender de sessão de acesso privada da PWA. Dados ODbL: https://www.adsb.lol/docs/open-data/api . Companhia inferida apenas por indicativo. Esta primeira versão nativa mostra nomes das companhias; os logos permanecem no mapa/PWA. Toque no widget para abrir o radar no ponto configurado, ou em Configurar para alterar o ponto. Sem publicidade, histórico de localização ou uso para navegação aérea.
+
+## Versão 0.2.1
+Você pode adicionar o widget antes de preencher coordenadas. Abra o aplicativo, toque em Adicionar widget à tela inicial e confirme no Android. No Galaxy, se a janela não aparecer, use Não abriu? Adicionar pelo menu Widgets. Depois escolha seu ponto em Ajustes. A versão instalada aparece no cabeçalho do aplicativo.

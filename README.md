@@ -52,10 +52,16 @@ Nova identidade em verde radar e ciano, mapa em tons verdes, ícone vetorial pr�
 
 Validação: navegação em PC e viewport 390 × 844, retorno pelo histórico do navegador, painel de instalação, testes de cache e instalação, compilação e lint Android sem erros. A inclusão do widget ainda requer conferência em aparelho Android real.
 
-
 ### Acesso direto
 
 - [Abrir o Radar Aero](https://riquee05.github.io/radar-aero/)
-- [Atualizar o widget Android 0.2.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget.apk?v=20261102-2)
+- [Atualizar o widget Android 0.2.1](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.2.1.apk)
 
 No app já instalado, use Widget na barra inferior. No Android, instale o APK atualizado para obter o botão Adicionar widget à tela inicial.
+
+
+## Widget 0.2.1 — adição sem coordenadas obrigatórias
+
+Removida a exigência de salvar um ponto antes de solicitar a adição à tela inicial. O botão Adicionar widget aparece antes do formulário. Configuração inicial opcional no Android 12 ou superior; a configuração acionada pelo launcher também permite adicionar agora e configurar depois. A confirmação de adição usa callback do sistema, sem tratar a solicitação aceita como widget já instalado.
+
+Feedback visível e caminho manual para o Galaxy: tela inicial → manter um espaço vazio pressionado → Widgets → Radar Aero Widget → Adicionar. O ponto é configurado depois em Ajustes. Compilação, lint, assinatura de atualização e flags do APK conferidos; ainda é necessário validar a adição no Galaxy A55 do usuário.
