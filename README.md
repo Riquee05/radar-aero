@@ -55,7 +55,7 @@ Validação: navegação em PC e viewport 390 × 844, retorno pelo histórico do
 ### Acesso direto
 
 - [Abrir o Radar Aero](https://riquee05.github.io/radar-aero/)
-- [Atualizar o widget Android 0.2.1](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.2.1.apk)
+- [Atualizar o widget Android 0.4.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.4.0.apk)
 
 No app já instalado, use Widget na barra inferior. No Android, instale o APK atualizado para obter o botão Adicionar widget à tela inicial.
 
@@ -91,3 +91,7 @@ O botão Seguir avião acompanha somente novas posições recebidas. Arrastar o 
 O widget separa identificação em destaque, rota e distância/modelo/altitude. Um contador mostra o tempo decorrido desde a consulta, inclusive entre atualizações; dados antigos recebem aviso ao redesenhar. Os botões permanecem fora da área reservada às aeronaves. As informações descrevem a última consulta, não rastreamento contínuo no widget.
 
 Validação: testes de acompanhamento (posição nova, antiga, ausente, inválida e falha da fonte); navegação e acompanhamento em viewport 390 × 844, incluindo parada ao arrastar; compilação e lint Android. A aparência nativa precisa ser conferida no Galaxy A55, pois não há aparelho conectado neste PC.
+
+### Usar as novidades
+
+Selecione uma aeronave e toque em Seguir avião. Para explorar livremente, arraste o mapa ou toque em Parar. [Atualize o widget para 0.4.0](https://riquee05.github.io/radar-aero/downloads/radar-aero-widget-0.4.0.apk), sem desinstalar. O contador mostra o tempo desde a consulta; toque em Atualizar para consultar novamente.
