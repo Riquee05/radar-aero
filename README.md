@@ -121,3 +121,7 @@ Clima direto no cartão via Open-Meteo: temperatura, vento, direção, umidade e
 Fontes: https://open-meteo.com/en/docs ; https://www.gru.com.br/pt/passageiro/voos ; https://www.riogaleao.com/passageiros/voos/painel-de-voos/ ; https://www.viracopos.com/pt_br/passageiro/painel-de-voos.htm ; https://www.aenabrasil.com.br/pt/aeroportos/aeroporto-de-congonhas/informacoes-de-voos.html ; https://www.salvador-airport.com.br/index.php/pt-br/partidas-e-chegadas ; https://www.bsb.aero/
 
 Validação: testes de clima, cache/atualização, restrição de aeroportos e falhas; regressões de Spotter, acompanhamento, instalação e cache offline. Consulta real com CORS permitida; cartões de GRU e SSA, mudança de região, retorno ao mapa e atalhos Voos/Clima conferidos em viewport 390 × 844. O APK continua na versão 0.4.0.
+
+### Consultar aeroporto
+
+[Abrir versão web 0.6.0](https://riquee05.github.io/radar-aero/?release=0.6.0). Toque no ícone de um aeroporto no mapa, ou use Aeroportos → Ver voos e clima. No cartão, Voos abre a seção com o painel oficial externo; Clima mostra a estimativa meteorológica. O botão Voltar ao mapa permanece disponível.
